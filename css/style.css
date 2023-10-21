@@ -1,51 +1,11 @@
 :root{
     --color-primary: white;
     --color-secondaire: #222222 ;
-    --color-text: #ffffff;
+    --color-text: #74ffa2;
     --ff-police: 'Pixel', sans-serif ;
     --ff-texte: 'Alumni', sans-serif;
-    --ff-texte2: 'Rubik', sans-serif
-    --ff-texte3: 'Nosifer', sans-serif
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    scroll-behavior: smooth;
-    text-decoration: none;
-}
-
-html {
-    font-family:'Times New Roman', Times, serif;
-}
- 
-
-
-body {
-    overflow-x: hidden;
-
-    background-color: rgb(73, 71, 71);
-    color: rgb(255, 255, 255);
-    font-family: var(--ff-police);
-
-
-
-/*---------------------NAV_BAR-----------------------*/
-
-.nav {
-    position: fixed;
-    top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-
-
-
-
+    --ff-texte2: 'Rubik', sans-serif;
+    --ff-texte3: 'Nosifer', sans-serif;
 }
 
 @font-face {
@@ -62,7 +22,80 @@ body {
     font-family: "Nosifer";
     src: url(../police/Nosifer/Nosifer-Regular.ttf);
 }
+
 @font-face {
     font-family: "Alumni";
     src: url(../police/Alumni_Sans_Collegiate_One/AlumniSansCollegiateOne-Regular.ttf);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+ 
+
+body {
+    overflow-x: hidden;
+}
+
+/*---------------------NAV_BAR-----------------------*/
+
+.NAV {
+    position:fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 1rem 2rem;
+    transition: 0.3s ease-in;
+    background-color: rgb(130, 56, 130);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    transform: translateX(00%);
+    animation: show 1s forwards;
+}
+
+.NAV .Logo {
+    font-family: var(--ff-texte2) ;
+    color: rgb(0, 0, 0);
+}
+.NAV .Title {
+    font-size: 30px;
+}
+.NAV .Subtitle {
+    font-size: 20px;
+}
+.NAV .NAV_list  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.NAV .NAV_list .NAV_list_item {
+    color: var(--color-text);
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.NAV .NAV_list .NAV_list_item:hover {
+    color: darkblue;
+    transform: translateY(-5px);
+}
+
+.Action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
