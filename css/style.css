@@ -43,9 +43,9 @@ body {
     overflow-x: hidden;
 }
 
-/*---------------------NAV_BAR-----------------------*/
+/*---------------------nav_BAR-----------------------*/
 
-.NAV {
+.nav {
     position:fixed;
     top: 0;
     display: flex;
@@ -62,23 +62,23 @@ body {
     animation: show 1s forwards;
 }
 
-.NAV .Logo {
+.nav .Logo {
     font-family: var(--ff-texte2) ;
     color: rgb(0, 0, 0);
 }
-.NAV .Title {
+.nav .Title {
     font-size: 30px;
 }
-.NAV .Subtitle {
+.nav .Subtitle {
     font-size: 20px;
 }
-.NAV .NAV_list  {
+.nav .nav-list  {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
-.NAV .NAV_list .NAV_list_item {
+.nav .nav-list .Nav-list-item {
     color: var(--color-text);
     font-size: 15px;
     font-family: sans-serif;
@@ -86,7 +86,7 @@ body {
     transition: 0.3s;
 }
 
-.NAV .NAV_list .NAV_list_item:hover {
+.nav .nav-list .Nav-list-item:hover {
     color: darkblue;
     transform: translateY(-5px);
 }
