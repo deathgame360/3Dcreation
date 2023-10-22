@@ -64,10 +64,11 @@ body {
 
 .nav .Logo {
     font-family: var(--ff-texte2) ;
-    color: rgb(0, 0, 0);
+    color: var(--color-primary);
+    font-size: 15px;
 }
 .nav .Title {
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav .Subtitle {
     font-size: 20px;
@@ -98,4 +99,35 @@ body {
     gap: 1rem;
 }
 
+.Action_item {
+    position: relative;
+}
 
+.Action_item i {
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.Action_item .counter::after {
+    position: absolute;
+    content: "0";
+    font-size: 10px;
+    background-color: rgb(28, 129, 131);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Action_item :hover {
+    color: darkblue;
+    transform: translateY(-5px);
+}
+
+/*---------------Section 1----------------------*/
