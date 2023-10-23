@@ -2,7 +2,7 @@
     --color-primary: white;
     --color-secondaire: #222222 ;
     --color-text: #74ffa2;
-    --ff-police: 'Pixel', sans-serif ;
+    --ff-texte1: 'Pixel', sans-serif ;
     --ff-texte: 'Alumni', sans-serif;
     --ff-texte2: 'Rubik', sans-serif;
     --ff-texte3: 'Nosifer', sans-serif;
@@ -58,7 +58,7 @@ body {
     background-color: rgb(130, 56, 130);
     backdrop-filter: blur(4px);
     z-index: 1;
-    transform: translateX(00%);
+    transform: translateX(100%);
     animation: show 1s forwards;
 }
 
@@ -131,3 +131,31 @@ body {
 }
 
 /*---------------Section 1----------------------*/
+.Section1 {
+    min-height: 100vh;
+    background-image: url(../img/IMG_8071.JPG);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 4rem;
+    position: relative;
+}
+.Section1 h1 {
+    font-size: 60px;
+    font-family: var(--ff-texte1);
+    color:aqua;
+    font-weight: 8;
+    letter-spacing: 1px;
+    animation: show 1s forwards;
+    transform: translateX(-100%);
+
+}
+
+@keyframes show {
+    to {
+        transform: translateX(0);
+    }
+}
