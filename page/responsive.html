@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="../css/resp.css">
+
+
+</head>
+<body>
+    <nav class="barre-navigation">
+        <a href="#" class="logo">3D_Création</a>
+        <div class="Liens-navs">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#">Nouveauté</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Mon Compte</a></li>
+            </ul>  
+        </div>
+        <img src="../img/menu-btn.png" alt="menu déroulant" class="menu-de">
+    </nav>
+    <header>    </header>
+    
+    </div>
+</body>
+
+    <script>
+
+        const menuHamburger = document.querySelector(".menu-de")
+            const navLinks = document.querySelector(".Liens-navs")
+
+            menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+                    })
+
+    </script>
+
+
+</html>
