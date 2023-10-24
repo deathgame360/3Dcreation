@@ -55,7 +55,7 @@ body {
     height: 6rem;
     padding: 1rem 2rem;
     transition: 0.3s ease-in;
-    background-color: rgb(130, 56, 130);
+    background-color: rgba(130, 56, 130, 0.712);
     backdrop-filter: blur(4px);
     z-index: 1;
     transform: translateX(100%);

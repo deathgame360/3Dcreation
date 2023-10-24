@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+
+ header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../3Dcreation/img/IMG_8071.JPG);
+    background-size: cover;
+    
+ }
+
+.barre-navigation {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.barre-navigation a {
+    color: aquamarine;
+}
+
+.barre-navigation .logo {
+    font-size: 2em;
+}
+
+.barre-navigation .Liens-navs ul {
+    display: flex;
+}
+
+.barre-navigation .Liens-navs ul li {
+    margin: 0 15px;
+}
+
+.barre-navigation .Liens-navs ul li.active a {
+    color: red ;
+    font-weight: 600 ;
+}
+.barre-navigation .menu-de {
+    display: none;
+    width: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+@media screen and (max-width:900px) {
+
+    .barre-navigation .menu-de{
+        display: block;
+    }
+
+    .barre-navigation .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .barre-navigation{
+        padding: 0;
+    }
+
+    .Liens-navs {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(39, 0, 102, 0.212);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:-100% ;
+        transition: all 0.5s;
+    }
+
+    .Liens-navs.mobile-menu {
+        margin-left: 0 ;
+    }
+
+    .Liens-navs ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .barre-navigation .Liens-navs ul li {
+        margin: 15px;
+        font-size: 1.5em;
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloc {
+    width: 1500px;
+    height: 500px;
+    background-color: rgba(82, 26, 212, 0.205);
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+.bloc p {
+    font-size: 1.3em;
+    align-items: center;
+    color: rgb(154, 193, 228);
+}
+
+@media screen and (max-width: 1499px) {
+    .bloc {
+        width: 70%;
+        font-size: 0.8em;
+        height: auto;
+        text-align: center;
+    }
+}
