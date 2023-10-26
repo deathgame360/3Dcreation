@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins";
+    overflow-x: hidden;
+}
+
+
+.boutique {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.produit {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s;
+    /* Transition de transformation pour l'effet d'agrandissement */
+}
+
+.produit:hover {
+    transform: scale(1.05);
+    /* Agrandit de 5% au survol */
+}
+
+.produit img {
+    width:auto
+}
+
+h3 {
+    margin: 10px 0;
+}
