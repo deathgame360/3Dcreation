@@ -135,6 +135,12 @@ header {
 }
 
 
+.liste-produit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .carte {
     width: auto;
@@ -142,7 +148,8 @@ header {
     margin: auto;
     display: flex;
     padding-top: 200px;
-    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     
 }
