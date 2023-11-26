@@ -12,10 +12,11 @@ body {
 
 
  header {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../img/IMG_8071.JPG);
+    height: auto/*100vh*/;
+    width: auto/*100vw*/;
+    /*background-image: url(../img/IMG_8071.JPG);*/
     background-size:cover;
+    background-color: rgba(11, 32, 56, 0.699)
     
  }
 
@@ -56,6 +57,8 @@ body {
     top: 50px;
     right: 50px;
 }
+
+
 
 @media screen and (max-width:900px) {
 
@@ -127,4 +130,48 @@ body {
         height: auto;
         text-align: center;
     }
+}
+
+
+.Information {
+    padding: 150px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+.dague {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.liste_info {
+    padding: 150px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    position: flex;
+}
+
+.photo_contenaire {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+
+.dragon_head {
+    width: 300px;
+    height: 200px;
+    display: flex;
+}
+
+.krokmou {
+    width: 200px;
+    height: 250px;
+    display: flex;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D création</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="Logo_container">
+                <div class="Logo Title">3D création</div>
+                <div class="Logo sub_title">bienvenue</div>
+            </div>
+            <ul class="nav-list">
+                <li class="Nav-list-item"><a href="../3Dcreation/page/responsive.html">Accueil</a></li>
+                <li class="Nav-list-item"><a href="../3Dcreation/page/Nouveauté.html">Nouveauté</a></li> 
+                <li class="Nav-list-item"><a href="../3Dcreation/page/boutique.html">Boutique</a></li>
+                <li class="Nav-list-item"><a href="../3Dcreation/page/contact.html">Contact</a></li>
+                <li class="Nav-list-item"><a href="../3Dcreation/page/Mon_Compte.html">Mon Compte</a></li>
+            </ul>
+            <div class="Action">
+                <div class="Action_item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="Action_item">
+                    <i class="fa-solid fa-cart-shopping counter"></i>
+                </div>
+                <div class="Action_item">
+                    <i class="fa-regular fa-heart counter"></i>
+                </div>
+            </div>
+            <img src="../3Dcreation/img/menu-btn.png" alt="menu déroulant" class="menu-de">
+        </nav>
+    </header>
+
+        <section class="Section1">
+            <h1>Accueil</h1>
+            <p1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, laborum?
+            </p1>
+        </section>
+
+    
+</body>
+
+    <script>
+
+        const menuHamburger = document.querySelector(".menu-de")
+        const navLinks = document.querySelector(".nav-list")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+
+</html>
