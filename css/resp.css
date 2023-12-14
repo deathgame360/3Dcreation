@@ -16,7 +16,7 @@ body {
     width: auto/*100vw*/;
     /*background-image: url(../img/IMG_8071.JPG);*/
     background-size:cover;
-    background-color: rgba(11, 32, 56, 0.699)
+    background-color: rgba(20, 47, 78, 0.699)
     
  }
 
@@ -28,10 +28,11 @@ body {
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    background-color: rgb(87, 201, 201);
 }
 
 .barre-navigation a {
-    color: aquamarine;
+    color: rgb(0, 0, 0);
 }
 
 .barre-navigation .logo {
