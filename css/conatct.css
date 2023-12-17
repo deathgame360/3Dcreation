@@ -1,0 +1,114 @@
+.con{
+    margin: 0px;
+    margin-top: 75px;
+    padding: 0px;
+    background-color: rgb(174, 198, 219);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    background-color: blueviolet;
+    padding: 50px;
+    border-radius: 20%;
+}
+
+form h1 {
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    
+}
+
+form .separation {
+    width: 80%;
+    height: 2px;
+    background-color: blueviolet;
+    padding-left: 40px;
+    margin-left: 30px;
+}
+
+form .corp-formulaire {
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    
+}
+
+form .corp-formulaire .groupe {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+form .corp-formulaire .gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px ;
+    border: 2px solid #636363;
+    outline-color:blueviolet ;
+    border-radius: 10px;
+}
+
+form .corp-formulaire .gauche .groupe i {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    padding: 5px 30px;
+    color: blueviolet;
+}
+
+form .corp-formulaire .droite {
+    margin-left: 30px ;
+
+}
+
+form .corp-formulaire .droite .groupe {
+    height: 100%;
+}
+
+form .corp-formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid blueviolet;
+    outline: none ;
+    border-radius: 10px;
+    resize: none;
+    height: 72%;
+}
+
+form .pied-formulaire button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    /*outline: ;*/
+    cursor: pointer;
+    transition:transform 1s;
+}
+
+form .pied-formulaire button:hover{
+    transform: scale(1.05);
+
+}
+
+@media screen and (max-width: 920px) {
+    form .corp-formulaire .droite{
+        margin-left: 0px;
+    }
+
+        .barre-navigation .menu-de {
+            display: block;
+            background-color: black;
+        }
+}
